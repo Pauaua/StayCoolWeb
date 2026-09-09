@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #002054;
+
+  --color-purple: #ecc6ff;
+  --color-yellow: #fef1ba;
+  --color-green: #ebfff7;
+  --color-blue-light: #d9ebff;
+  --color-blue-deep: #002054;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-purple: var(--color-purple);
+  --color-brand-yellow: var(--color-yellow);
+  --color-brand-green: var(--color-green);
+  --color-brand-blue-light: var(--color-blue-light);
+  --color-brand-blue-deep: var(--color-blue-deep);
+
+  --font-sans: var(--font-rethink-sans);
+  --font-script: var(--font-hero-script);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.falling-dot {
+  position: absolute;
+  top: -5vh;
+  border-radius: 50%;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .falling-dot {
+    animation: none;
+    display: none;
+  }
+}
