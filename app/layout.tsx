@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rethink_Sans, WindSong } from "next/font/google";
 import FallingDots from "@/components/FallingDots";
+import CursorTrail from "@/components/CursorTrail";
 import "./globals.css";
 
 const rethinkSans = Rethink_Sans({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-white text-brand-blue-deep">
         <FallingDots />
+        <CursorTrail />
         {children}
       </body>
     </html>

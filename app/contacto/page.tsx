@@ -11,8 +11,8 @@ export default function ContactoPage() {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <Navbar />
-      <main className="flex-1 bg-brand-blue-light/30 px-6 py-24">
-        <div className="mx-auto grid max-w-4xl gap-16 sm:grid-cols-2">
+      <main className="flex-1 bg-brand-blue-light/30 px-6 py-16 sm:py-24">
+        <div className="mx-auto grid max-w-4xl gap-10 sm:grid-cols-2 sm:gap-16">
           <div>
             <h1 className="text-3xl font-semibold tracking-tight text-brand-blue-deep sm:text-4xl">
               Contacto
@@ -24,10 +24,6 @@ export default function ContactoPage() {
 
             <dl className="mt-8 space-y-4 text-sm">
               <div>
-                <dt className="font-medium text-brand-blue-deep">Teléfono</dt>
-                <dd className="text-brand-blue-deep/70">+56 9 XXXX XXXX</dd>
-              </div>
-              <div>
                 <dt className="font-medium text-brand-blue-deep">Correo</dt>
                 <dd className="text-brand-blue-deep/70">
                   contacto@staycool.cl
@@ -36,10 +32,10 @@ export default function ContactoPage() {
             </dl>
 
             <a
-              href="https://wa.me/56912345678"
+              href="https://wa.me/56945305434"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center rounded-full bg-brand-green px-6 py-3 text-sm font-semibold text-brand-blue-deep transition-opacity hover:opacity-90"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-brand-green px-6 py-3 text-sm font-semibold text-brand-blue-deep transition-colors hover:bg-brand-purple"
             >
               Escríbenos por WhatsApp
             </a>
