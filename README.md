@@ -96,11 +96,3 @@ npx prisma studio
 - `prisma/schema.prisma` — modelo de datos.
 - `lib/prisma.ts` — cliente de Prisma singleton.
 
-## Pendientes / a reemplazar
-
-- Reemplazar el placeholder de teléfono, correo y WhatsApp en
-  `app/contacto/page.tsx`.
-- Reemplazar el código QR (placeholder) en `components/QueEsLaApp.tsx` por
-  el QR real apuntando a la ficha de Google Play.
-- Revisar y ajustar el texto de `app/privacidad/page.tsx` con el equipo
-  legal antes de publicar la URL en las tiendas.
