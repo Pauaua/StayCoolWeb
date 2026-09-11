@@ -15,15 +15,15 @@ function seededRandom(seed: number) {
   return x - Math.floor(x);
 }
 
-const DOT_COUNT = 26;
+const DOT_COUNT = 12;
 
 const dots = Array.from({ length: DOT_COUNT }, (_, i) => {
   const left = seededRandom(i * 3.1) * 100;
-  const size = 4 + seededRandom(i * 7.7) * 6;
-  const duration = 18 + seededRandom(i * 5.3) * 16;
+  const size = 3 + seededRandom(i * 7.7) * 5;
+  const duration = 24 + seededRandom(i * 5.3) * 18;
   const delay = -seededRandom(i * 9.9) * duration;
   const color = COLORS[i % COLORS.length];
-  const opacity = color === "var(--color-blue-deep)" ? 0.15 : 0.35;
+  const opacity = color === "var(--color-blue-deep)" ? 0.08 : 0.16;
 
   return { left, size, duration, delay, color, opacity, key: i };
 });

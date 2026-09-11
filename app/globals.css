@@ -59,3 +59,53 @@ html {
     display: none;
   }
 }
+
+.banner-sparkle {
+  position: absolute;
+  border-radius: 50%;
+  animation-name: twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-sparkle {
+    animation: none;
+    opacity: 0.6;
+  }
+}
+
+.cursor-sparkle {
+  position: fixed;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: #eaf5ff;
+  box-shadow:
+    0 0 12px 4px var(--color-blue-light),
+    0 0 24px 10px var(--color-blue-light),
+    0 0 40px 16px color-mix(in srgb, var(--color-blue-light) 60%, transparent);
+  animation: cursor-fade 0.7s ease-out forwards;
+}
+
+@keyframes cursor-fade {
+  0% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+}

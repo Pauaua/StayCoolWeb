@@ -45,7 +45,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
-          className="rounded-lg border border-brand-blue-light bg-white px-4 py-2.5 text-brand-blue-deep outline-none focus:border-brand-blue-deep"
+          className="w-full rounded-lg border border-brand-blue-light bg-white px-4 py-2.5 text-brand-blue-deep outline-none focus:border-brand-blue-deep"
         />
       </div>
 
@@ -58,7 +58,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
-          className="rounded-lg border border-brand-blue-light bg-white px-4 py-2.5 text-brand-blue-deep outline-none focus:border-brand-blue-deep"
+          className="w-full rounded-lg border border-brand-blue-light bg-white px-4 py-2.5 text-brand-blue-deep outline-none focus:border-brand-blue-deep"
         />
       </div>
 
@@ -71,14 +71,14 @@ export default function ContactForm() {
           name="message"
           rows={5}
           required
-          className="resize-none rounded-lg border border-brand-blue-light bg-white px-4 py-2.5 text-brand-blue-deep outline-none focus:border-brand-blue-deep"
+          className="w-full resize-none rounded-lg border border-brand-blue-light bg-white px-4 py-2.5 text-brand-blue-deep outline-none focus:border-brand-blue-deep"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="mt-2 inline-flex items-center justify-center rounded-full bg-brand-blue-deep px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+        className="mt-2 inline-flex items-center justify-center rounded-full bg-brand-blue-deep px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-purple hover:text-brand-blue-deep disabled:opacity-50"
       >
         {status === "loading" ? "Enviando..." : "Enviar mensaje"}
       </button>

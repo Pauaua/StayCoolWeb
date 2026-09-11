@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import QueEsLaApp from "@/components/QueEsLaApp";
 import Pricing from "@/components/Pricing";
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <QueEsLaApp />
         <Pricing />
+        <Banner />
       </main>
       <Footer />
     </div>
