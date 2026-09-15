@@ -11,6 +11,9 @@ export default function Footer() {
           <Link href="/terminos" className="transition-colors hover:text-brand-purple">
             Términos de Uso
           </Link>
+          <Link href="/eliminar-cuenta" className="transition-colors hover:text-brand-purple">
+            Elimina tu cuenta
+          </Link>
           <Link href="/contacto" className="transition-colors hover:text-brand-purple">
             Contacto
           </Link>
