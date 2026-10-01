@@ -18,7 +18,7 @@ export default function TerminosPage() {
             Términos de Uso (EULA)
           </h1>
           <p className="mt-3 text-sm text-brand-blue-deep/50">
-            Última actualización: 08 de septiembre el 2026
+            Última actualización: 08 de septiembre del 2026
           </p>
 
           <div className="mt-10 space-y-6 text-base leading-relaxed text-brand-blue-deep/80">
