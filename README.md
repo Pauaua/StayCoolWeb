@@ -96,3 +96,9 @@ npx prisma studio
 - `prisma/schema.prisma` — modelo de datos.
 - `lib/prisma.ts` — cliente de Prisma singleton.
 
+
+## Uso de inteligencia artificial
+
+En el desarrollo de este proyecto se utilizaron herramientas de
+inteligencia artificial como apoyo para correcciones, testeos y para
+agilizar procesos.
