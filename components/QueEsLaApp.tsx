@@ -54,7 +54,7 @@ export default function QueEsLaApp() {
       <div className="mx-auto max-w-4xl">
         <div className="mx-auto flex max-w-xl flex-col items-center gap-4 text-center">
           <Image
-            src="/images/makeup.png"
+            src="/images/isotipoFB.png"
             alt=""
             width={72}
             height={72}
