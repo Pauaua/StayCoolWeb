@@ -1,3 +1,8 @@
+import Image from "next/image";
+
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.agendacool.app&hl=es_CL";
+
 export default function Hero() {
   return (
     <section id="inicio" className="relative px-6 py-20 sm:py-28">
@@ -47,15 +52,34 @@ export default function Hero() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-blue-deep/50">
             Descarga la app
           </p>
-          <div className="mt-6 flex h-44 w-44 items-center justify-center rounded-2xl bg-brand-blue-light/40 sm:h-56 sm:w-56">
-            <span className="px-6 text-center text-sm text-brand-blue-deep/40">
-              QR próximamente
-            </span>
+          <div className="mt-6 flex h-44 w-44 items-center justify-center rounded-2xl bg-brand-blue-light/40 p-4 sm:h-56 sm:w-56 sm:p-5">
+            <Image
+              src="/images/qr-google-play.svg"
+              alt="Código QR para descargar StayCool en Google Play"
+              width={224}
+              height={224}
+              className="h-full w-full"
+            />
           </div>
           <p className="mt-6 text-center text-sm text-brand-blue-deep/60">
             Escanea el código con la cámara de tu celular para descargar
             StayCool
           </p>
+          <a
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue-deep px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-purple hover:text-brand-blue-deep"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              className="h-4 w-4 fill-current"
+            >
+              <path d="M4 2.5v19a1 1 0 0 0 1.5.86l16-9.5a1 1 0 0 0 0-1.72l-16-9.5A1 1 0 0 0 4 2.5Z" />
+            </svg>
+            Descargar en Google Play
+          </a>
         </div>
       </div>
     </section>
